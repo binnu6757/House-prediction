@@ -7,7 +7,7 @@ from sklearn.linear_model import LinearRegression
 
 import pickle
 
-model = pickle.load(open(r"C:\Users\reddy\lr.pkl","rb"))
+model = pickle.load(open(r"lr.pkl","rb"))
 
 squarefeet = st.number_input("Enter the size of the house",min_value =600,max_value = 5000,step =50)
 Bedrooms = st.number_input("Enter the number of bedrooms",min_value = 0,max_value = 5,step = 1)
