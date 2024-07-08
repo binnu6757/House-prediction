@@ -17,6 +17,7 @@ neighbour = 1 if Neighbourhood=="Rural" else 2 if Neighbourhood == "Urban" else 
 Yearbuilt = st.number_input("Enter the year of construction",min_value = 1900,max_value = 2030,step =1)
 price = model.predict([[squarefeet,Bedrooms,bathrooms,neighbour,Yearbuilt]])
 st.write("The price of the plot for the given details is Rs.",price)
+st.button("Predicted Price")
 
 
 
